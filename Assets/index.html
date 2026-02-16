@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
     <div class="site-nav">
       <div class="left-column">
         <div class="logo">
-            <img src="images/logo/logo-header.png" alt="logo">
-          </div> 
+          <img src="images/logo/logo-header.png" alt="logo" />
+        </div>
       </div>
-      <div class="center-column">
-
-      </div>
+      <div class="center-column"></div>
       <div class="right-column">
         <div class="links__wrapper">
           <div class="nav-link"><a href="index.html">Home</a></div>
@@ -25,7 +29,9 @@
           <div class="nav-link"><a href="news.html">news</a></div>
         </div>
         <div class="contact-button">
-          <Button><a href="contact us.html">Book Now</a></Button>
+          <div class="nav-link">
+            <button><a href="contact us.html">Book Now</a></button>
+          </div>
         </div>
       </div>
     </div>
@@ -33,21 +39,20 @@
       <div class="section">
         <article>
           <h3>Make An Appointment</h3>
+          <form class="booking__form">
           <input type="text" name="name" id="name" placeholder="John Doe" />
-          <br>
           <input type="email" name="email" id="Email" placeholder="Email" />
-          <br>
           <input type="number" name="phone" id="Phone" placeholder="phone" />
-          <br />
           <input type="datetime-local" name="Date" id="Date" />
-          <input type="button" value="Submit request" />
+          <input type="button" value="Submit request" onclick="window.location.href='contact us.html'" />
+          </form>
         </article>
-        <p class="description">
+        <h2 class="description">
           Experience the art of traditional barbering with modern style.<br />
-          Book your appointment today and discover the Elite Cuts difference.
-        </p>
+          Book your appointment today and discover the <span class="text-amber-500">FadeCraft's</span> Cuts difference.
+        </h2>
         <div class="motto">
-          <p>Where Style Meets Precision</p>
+          <h1>Where Style Meets Precision</h1>
         </div>
       </div>
     </div>
