@@ -1,100 +1,3 @@
-:root {
-  --site-nav-height: 100px;
-  --nav-gap: 1rem;
-}
-body {
-  margin: 0;
-  padding-top: calc(var(--site-nav-height)+var(--nav-gap));
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/background/photo-1686671805337-7d8aa64b965f.avif");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.site-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: var(--site-nav-height);
-  z-index: 1000;
-  border: 0;
-  box-shadow: none;
-  background-color: #090909;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-.left-column {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.left-column > .logo img {
-  width: 170px;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 8px;
-  max-width: 100%;
-}
-.site-nav > .center-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 500px;
-}
-.right-column {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-.right-column > .links__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.links__wrapper > .nav-link {
-  width: 70px;
-  text-align: center;
-}
-.links__wrapper > .nav-link a {
-  font-family: "Ubuntu Condensed", sans-serif;
-  transition: 0.5s;
-  text-decoration: none;
-  color: #a1a1a1;
-}
-.links__wrapper > .nav-link a:hover {
-  color: #cea135;
-  letter-spacing: 2px;
-}
-.contact-button {
-  display: flex;
-  align-items: flex-end;
-}
-button {
-  width: 125px;
-  height: 60px;
-  border: none;
-  border-radius: 30px;
-  font-family: "Ubuntu Condensed", sans-serif;
-  transition: 0.5s;
-  gap: 12px;
-  background-color: oklch(76.9% 0.188 70.08);
-  color: #090909;
-  text-decoration: none;
-}
-button:hover {
-  background-color: #cea135;
-  color: #a1a1a1;
-}
 .section{
     display: grid;
     grid-template-columns: 380px 1fr;
@@ -113,7 +16,7 @@ button:hover {
 }
 h3 {
   padding: 1px 20px;
-  width: 290px;
+  width: 390px;
   border-radius: 2px;
 }
 article {
