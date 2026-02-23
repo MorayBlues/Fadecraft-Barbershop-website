@@ -1,31 +1,36 @@
 :root {
   --site-nav-height: 100px;
   --nav-gap: 1rem;
+  --banner-height: 48px;
+  --banner-height-v2: 40px;
+  --full-height-with-banner: calc(100dvh - var(--banner-height));
 }
 body {
   margin: 0;
   padding-top: calc(var(--site-nav-height)+var(--nav-gap));
-  width: 100%;
+  width: 700px;
   height: 100%;
-  background-image: url("../images/background/photo-1686671805337-7d8aa64b965f.avif");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .site-nav {
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: calc(var(--spacing) * 0);
+  margin: 0;
+  padding: 0;
   left: 0;
   right: 0;
   width: 100vw;
   height: var(--site-nav-height);
   z-index: 1000;
-  border: 0;
+  border: 0 solid;
+  border-color: #fe9a00;
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 1px;
+  z-index: 50;
   box-shadow: none;
   background-color: #090909;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
   box-sizing: border-box;
 }
 .left-column {
@@ -34,7 +39,7 @@ body {
   gap: 8px;
 }
 .left-column > .logo img {
-  width: 500px;
+  width: 100px;
   height: auto;
   display: flex;
   align-items: flex-start;
