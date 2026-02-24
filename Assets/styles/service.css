@@ -47,21 +47,32 @@ p {
   text-align: center;
 }
 .classic {
-  hover {
-    transition-property: all;
-    transition-timing-function: var(
-      --tw-ease,
-      var(--default-transition-timing-function)
-    );
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
+  display: flex;
+  align-items: flex-start;
+  gap: calc(var(--spacing) * 4);
   padding: calc(var(--spacing) * 6);
   border-style: var(--tw-border-style);
-    border-width: 1px;
-    border-radius: var(--radius);
+  border-width: 1px;
+  border-radius: var(--radius);
+}
+.outer {
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: calc(var(--spacing) * 4);
 }
 .grid-col {
   display: grid;
-
+  justify-content: space-around;
   gap: calc(var(--spacing) * 6);
+}
+span {
+  color: #fe9a00;
+}
+.price {
+  color: #fe9a00;
+  white-space: nowrap;
+  font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+    margin-left: calc(var(--spacing) * 4);
 }
