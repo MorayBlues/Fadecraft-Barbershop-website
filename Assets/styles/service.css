@@ -13,6 +13,7 @@ main {
   padding: 40px 20px;
 }
 .header-content{
+  align-self: center;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -116,4 +117,25 @@ span {
   font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
     margin-left: calc(var(--spacing) * 4);
+}
+.expectations{
+  width: 100vw;
+  max-width: 100%;
+  background-color: #000;
+  border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-radius: var(--radius);
+    margin-top: calc(var(--spacing) * 16);
+}
+.expectations > .h4{
+  color: #fe9a00;
+}
+.background{
+  padding: calc(var(--spacing) * 8);
+}
+.grid-col-2{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 2fr));
+  color: #99a1af;
+  gap: calc(var(--spacing) * 6);
 }
