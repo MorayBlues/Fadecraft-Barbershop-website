@@ -1,0 +1,154 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700px;
+  font-style: normal;
+}
+.main {
+  padding-block: calc(var(--spacing) * 20);
+  background-color: #000;
+  overflow: hidden;
+}
+.max {
+  max-width: var(--container-7xl);
+  margin-inline: auto;
+}
+.grid-cols1 {
+  gap: calc(var(--spacing) * 12);
+  align-items: center;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  display: grid;
+}
+.content {
+  opacity: 1;
+  transform: none;
+}
+.heading {
+  color: #fff;
+  margin-bottom: calc(var(--spacing) * 6);
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+p {
+  opacity: 1;
+  transform: none;
+  color: #99a1af;
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  margin-bottom: calc(var(--spacing) * 6);
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+.two {
+  opacity: 1;
+  transform: none;
+  color: #99a1af;
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  margin-bottom: calc(var(--spacing) * 8);
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+.grid-cols2 {
+  opacity: 1;
+  transform: none;
+  gap: calc(var(--spacing) * 4);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: grid;
+  unicode-bidi: isolate;
+}
+.img1 {
+  opacity: 1;
+  transform: none;
+  display: block;
+  unicode-bidi: isolate;
+}
+.img2 {
+  opacity: 1;
+  transform: none;
+  margin-top: calc(var(--spacing) * 8);
+  display: block;
+  unicode-bidi: isolate;
+}
+.secondary {
+  padding-block: calc(var(--spacing) * 20);
+  --tw-gradient-to: var(--color-amber-500);
+  --tw-gradient-stops: var(--tw-gradient-via-stops);
+  --tw-gradient-from: var(--color-amber-600);
+  --tw-gradient-stops: var(--tw-gradient-via-stops);
+  --tw-gradient-position: to right in oklab;
+  background-image: linear-gradient(var(--tw-gradient-stops));
+}
+.h2 {
+  text-align: center;
+  padding-inline: calc(var(--spacing) * 4);
+  max-width: var(--container-4xl);
+  margin-inline: auto;
+  --tw-gradient-to: var(--color-amber-500);
+  --tw-gradient-stops: var(--tw-gradient-via-stops);
+  --tw-gradient-from: var(--color-amber-600);
+  --tw-gradient-stops: var(--tw-gradient-via-stops);
+  --tw-gradient-position: to right in oklab;
+  background-image: linear-gradient(var(--tw-gradient-stops));
+}
+.seco {
+  margin-bottom: calc(var(--spacing) * 6);
+  line-height: 1.5;
+}
+.answer {
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  margin-bottom: calc(var(--spacing) * 8);
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  text-align: center;
+  --tw-gradient-to: var(--color-amber-500);
+  --tw-gradient-stops: var(--tw-gradient-via-stops);
+  --tw-gradient-from: var(--color-amber-600);
+  --tw-gradient-stops: var(--tw-gradient-via-stops);
+  --tw-gradient-position: to right in oklab;
+  background-image: linear-gradient(var(--tw-gradient-stops));
+}
+.button {
+  .hover\:bg-neutral-800 {
+  }
+  transition-property:
+    color, background-color, border-color, outline-color, text-decoration-color,
+    fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-timing-function: var(
+    --tw-ease,
+    var(--default-transition-timing-function)
+  );
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  color: #fff;
+  padding-block: calc(var(--spacing) * 4);
+  padding-inline: calc(var(--spacing) * 8);
+  background-color: #000;
+  border-radius: calc(var(--radius)-2px);
+  gap: calc(var(--spacing) * 2);
+  align-items: center;
+  display: inline-flex;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  --tw-gradient-to: var(--color-amber-500);
+  --tw-gradient-stops: var(--tw-gradient-via-stops);
+  --tw-gradient-from: var(--color-amber-600);
+  --tw-gradient-stops: var(--tw-gradient-via-stops);
+  --tw-gradient-position: to right in oklab;
+  background-image: linear-gradient(var(--tw-gradient-stops));
+}
