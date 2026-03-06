@@ -1,25 +1,42 @@
+:root {
+  --spacing: 4px;
+  --container-7xl: 1280px;
+}
 body {
   color: #0a0a0a;
+  width: 100%;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700px;
   font-style: normal;
 }
+.hero-section {
+  min-height: calc(100vh - var(--site-nav-height));
+  color: #000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+}
 main {
   flex: 1;
+  width: 100%;
+  max-width: 100%;
 }
 .container {
   padding-block: calc(var(--spacing) * 20);
   background-color: #171717;
   min-height: 100vh;
+  width: 100%;
 }
 .padding {
-  padding-inline: calc(var(--spacing) * 8);
-  padding-inline: calc(var(--spacing) * 4);
+  padding-inline: 20px;
+  width: 100%;
   max-width: var(--container-7xl);
   margin-inline: auto;
 }
 .inline {
+  max-width: var(--container-7xl);
   text-align: center;
   margin-bottom: calc(var(--spacing) * 16);
 }
@@ -59,82 +76,97 @@ p {
   margin-inline-end: 0px;
   text-align: center;
 }
-.img-wrapper{
-    gap: 4px;
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0,1fr));
+.img-wrapper {
+  gap: 24px;
+  margin-top: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-.img1{
-    transition-property: all;
-    transition-duration: 150ms;
-    background-color: #262626;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    overflow: hidden;
-    aspect-ratio: 1/1;
-    position: relative;
+.img {
+  background-color: #262626;
+  border: 1px solid #333;
+  border-radius: 15px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  position: relative;
 }
-.photo{
-    transition-duration: 300ms;
-    transition-property: opacity;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 0%;
-    inset: 4px;
-    position: absolute;
-    --tw-duration: 300ms;
-    background-image: linear-gradient(var(--tw-gradient-stops));
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
 }
-.bottom{
-    padding: 4px;
-    left: 4px;
-    bottom: 4px;
-    right: 4px;
-    position: absolute;
-    --tw-duration:300ms;
-    transition-duration: 300ms;
+.img:hover img {
+  transform: scale(1.05);
 }
-.insta{
-    text-align: center;
-    padding: 4px;
-    background-color: #000;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    margin-top: 4px;
+.photo {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  inset: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  opacity: 0;
+  transition: opcity 0.3s ease;
 }
-h2{
-    color: #fff;
-    margin-bottom: 4px;
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    text-align: center;
+.img:hover .photo {
+  opacity: 1;
 }
-.gram{
-    color: #000;
-    padding-block: 4px;
-    padding-inline: 4px;
-    background-color: #fe9a00;
-    border-radius: 10px;
-    gap: 4px;
-    align-items: center;
-    display: inline-flex;
-    text-decoration: none;
-    text-align: center;
+.bottom span {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-i{
-    width: 4px;
-    height: 4px;
-    display: block;
-    vertical-align: middle;
-    fill: currentColor;
-    overflow-clip-margin: content-box;
-    overflow: hidden;
-    color: #000;
-    cursor: pointer;
-    text-align: center;
+.bottom p {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 5px 0 0 0;
+  text-align: left;
+}
+.insta {
+  text-align: center;
+  padding: 4px;
+  background-color: #000;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  margin-top: 4px;
+}
+h2 {
+  color: #fff;
+  margin-bottom: 4px;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+}
+.gram {
+  color: #000;
+  padding-block: 4px;
+  padding-inline: 4px;
+  background-color: #fe9a00;
+  border-radius: 10px;
+  gap: 4px;
+  align-items: center;
+  display: inline-flex;
+  text-decoration: none;
+  text-align: center;
+}
+i {
+  width: 4px;
+  height: 4px;
+  display: block;
+  vertical-align: middle;
+  fill: currentColor;
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
 }
