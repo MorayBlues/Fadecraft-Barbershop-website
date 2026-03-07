@@ -7,16 +7,8 @@ body {
   width: 100%;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700px;
+  font-weight: 700;
   font-style: normal;
-}
-.hero-section {
-  min-height: calc(100vh - var(--site-nav-height));
-  color: #000;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100vh;
 }
 main {
   flex: 1;
@@ -32,13 +24,13 @@ main {
 .padding {
   padding-inline: 20px;
   width: 100%;
-  max-width: var(--container-7xl);
   margin-inline: auto;
 }
 .inline {
   max-width: var(--container-7xl);
   text-align: center;
   margin-bottom: calc(var(--spacing) * 16);
+  margin-inline: auto;
 }
 .portfolio {
   padding-block: calc(var(--spacing) * 2);
@@ -109,7 +101,7 @@ p {
   padding: 20px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   opacity: 0;
-  transition: opcity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 .img:hover .photo {
   opacity: 1;

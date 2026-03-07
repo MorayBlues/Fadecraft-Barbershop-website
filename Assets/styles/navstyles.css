@@ -8,11 +8,10 @@
 body {
   margin: 0;
   padding-top: calc(var(--site-nav-height)+var(--nav-gap));
-  width: 700px;
   height: 100%;
 }
 .site-nav {
-  position: sticky;
+  position: relative;
   top: calc(var(--spacing) * 0);
   margin: 0;
   padding: 0;
@@ -53,7 +52,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 500px;
+  flex: 1;
 }
 .right-column {
   display: flex;
