@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/contacts.css" />
+    <link rel="stylesheet" href="styles/navstyles.css" />
+  </head>
+  <body>
+    <div class="site-nav">
+      <div class="left-column">
+        <div class="logo">
+          <img src="images/logo/logo-header.png" alt="logo" />
+        </div>
+      </div>
+      <div class="center-column"></div>
+      <div class="right-column">
+        <div class="links__wrapper">
+          <div class="nav-link"><a href="index.html">Home</a></div>
+          <div class="nav-link"><a href="service.html">Services</a></div>
+          <div class="nav-link"><a href="About us.html">About</a></div>
+          <div class="nav-link"><a href="Gallery.html">Gallery</a></div>
+        </div>
+        <div class="contact-button">
+          <div class="nav-link">
+            <button><a href="contact us.html">Book Now</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+        <div class="container">
+            <form action="">
+              <div>
+                <label for="Name">Name:</label>
+                <input type="text" name="name" id="name">
+                </div>
+                <div>
+                <label for="Phone">Phone Number:</label>
+                <input type="number" name="phone" id="phone">
+                </div>
+                <div>
+                <label for="service">Service:</label>
+                <select name="service" id="service">
+                  <option value="">Select a service</option>
+                  <option value="Classic-Cut">Classic cut-$35</option>
+                  <option value="Premium-Cut">Premium cut & Style-$50</option>
+                  <option value="Fade">Fade/taper-$40</option>
+                  <option value="Beard-Trim">Beard trim-$25</option>
+                  <option value="hot-shave">Hot Towel Shave-$40</option>
+                  <option value="beard-design">Beard Design-$35</option>
+                  <option value="executive">The Executive-$65</option>
+                  <option value="royal">The Royal Treatment-$85</option>
+                </select>
+                </div>
+                <div>
+                <label for="date">Prefered Date:</label>
+                <input type="date" name="date" id="date">
+                </div>
+                <div>
+                <label for="Time">Convinient Time:</label>
+                <select name="time" id="time">
+                  <option value="">Select Time</option>
+                  <option value="0900">9:00 AM</option>
+                  <option value="1000">10:00 AM</option>
+                  <option value="1100">11:00 AM</option>
+                  <option value="1200">12:00 PM</option>
+                  <option value="1300">13:00 PM</option>
+                  <option value="1400">14:00 PM</option>
+                  <option value="1500">15:00 PM</option>
+                  <option value="1600">16:00 PM</option>
+                  <option value="1700">17:00 PM</option>
+                  <option value="1800">18:00 PM</option>
+                  <option value="1900">19:00 PM</option>
+                </select>
+                </div>
+                <div>
+                  <label for="message">Additional Notes(Optional)</label>
+                  <input type="text" name="message" id="message" placeholder="Any Special requests or preferences?">
+                </div>
+                <div class="submit">
+                  <button type="submit">
+                    <span>Submit Appointment Request</span>
+                    <i class="fa-brands fa-telegram"></i>
+                  </button>
+                </div>
+                <p>We'll contact you within 24 hours to confirm your appointment.</p>
+            </form>
+        </div>
+    </main>
+  </body>
+</html>
