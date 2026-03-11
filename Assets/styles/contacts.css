@@ -59,3 +59,41 @@ p{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.location{
+  padding: 4px;
+  background-color: #262626;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  gap: 4px;
+  align-items: flex-start;
+  display: flex;
+}
+i{
+  border-radius: 3.40282e38px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  display: flex;
+}
+h3{
+  color: #fff;
+  margin-bottom: 4px;
+  line-height: 1.5;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.phone{
+  padding: 4px;
+  background-color: #262626;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  gap: 4px;
+  align-items: flex-start;
+  display: flex;
+}
