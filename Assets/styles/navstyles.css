@@ -83,11 +83,11 @@ body {
   display: flex;
   align-items: flex-end;
 }
-button {
+.btn {
   width: 125px;
   height: 60px;
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
   font-family: "Ubuntu Condensed", sans-serif;
   transition: 0.5s;
   gap: 12px;
@@ -95,7 +95,7 @@ button {
   color: #090909;
   text-decoration: none;
 }
-button:hover {
+.btn:hover {
   background-color: #cea135;
   color: #a1a1a1;
 }

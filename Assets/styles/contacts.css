@@ -51,7 +51,7 @@ p {
   margin-block-end: 1em;
   text-align: center;
 }
-.grid-cols {
+.grid-cols1 {
   gap: 4px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -155,22 +155,157 @@ h3 {
   height: 4px;
   display: flex;
 }
-.timing{
+.timing {
   width: 100%;
   line-height: 1.42857;
 }
-.days{
+.days {
   color: #99a1af;
   justify-content: space-between;
   display: flex;
   line-height: 1.42857;
 }
-.two{
+.two {
   color: #fff;
 }
-form{
+form {
   padding: 4px;
   background-color: #262626;
   border-style: solid;
   border-width: 1px;
+  border-radius: 10px;
+  grid-column: span 2 / span 2;
+}
+.grid-cols2 {
+  grid-template-columns: repeat(2 minmax(0, 1fr));
+  gap: 4px;
+  display: grid;
+}
+.record {
+}
+label {
+  color: #fff;
+  line-height: 1.42857;
+  display: block;
+  margin-bottom: 4px;
+  cursor: default;
+}
+input {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property:
+    color, background-color, border-color, outline-color, text-decoration-color,
+    fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-duration: 0.15s;
+  color: #fff;
+  padding-block: 4px;
+  padding-inline: 4px;
+  background-color: #171717;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  width: 100%;
+  resize: none;
+  line-height: 1.5;
+  opacity: 1;
+  font: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  letter-spacing: inherit;
+  overflow-clip-margin: 0px !important;
+  overflow: clip !important;
+  text-rendering: auto;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  cursor: text;
+}
+select {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property:
+    color, background-color, border-color, outline-color, text-decoration-color,
+    fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-duration: 0.15s;
+  color: #fff;
+  padding-block: 4px;
+  padding-inline: 4px;
+  background-color: #171717;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  width: 100%;
+  line-height: 1.5;
+  opacity: 1;
+  display: -internal-auto-base(inline-block, inline-flex);
+  text-shadow: -internal-auto-base(none, inherit);
+  text-transform: -internal-auto-base(none, inherit);
+  text-rendering: -internal-auto-base(auto, inherit);
+  word-spacing: -internal-auto-base(normal, inherit);
+  text-align: -internal-auto-base(start, initial);
+  text-indent: -internal-auto-base(0px, initial);
+  cursor: -internal-auto-base(default, inherit);
+  user-select: -internal-auto-base(auto, none);
+  overflow: visible !important;
+  white-space: internal-auto-base(pre, inherit);
+}
+option {
+  padding-block-end: -internal-auto-base(1px, 0);
+  display: -internal-auto-base(block, flex);
+  padding-inline: -internal-auto-base(2px, 0.5em);
+  min-inline-size: 24px;
+  min-block-size: -internal-auto-base(24px, max(24px, 1lh));
+  font-weight: -internal-auto-base(normal, inherit);
+  align-items: center;
+  padding-block-start: 0px;
+  white-space: nowrap;
+  color: -internal-auto-base(inherit, CanvasText);
+  text-shadow: -internal-auto-base(none, inherit);
+  text-transform: -internal-auto-base(none, inherit);
+  text-rendering: -internal-auto-base(auto, inherit);
+  word-spacing: -internal-auto-base(normal, inherit);
+  text-align: -internal-auto-base(start, initial);
+  text-indent: -internal-auto-base(0px, initial);
+  cursor: -internal-auto-base(default, inherit);
+  user-select: -internal-auto-base(auto, none);
+  overflow: visible !important;
+  white-space: internal-auto-base(pre, inherit);
+}
+button {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property:
+    color, background-color, border-color, outline-color, text-decoration-color,
+    fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-duration: 0.15s;
+  color: #000;
+  padding-block: 4px;
+  background-color: #fe9a00;
+  border-radius: 10px;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  line-height: 1.5;
+  appearance: button;
+  font: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  opacity: 1;
+}
+.map{
+  background-color: #262626;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 4px;
+  display: flex;
+  margin-top: 4px;
 }
