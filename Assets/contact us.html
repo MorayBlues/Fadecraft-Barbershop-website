@@ -88,14 +88,18 @@
               </div>
             </div>
             <form action="">
-              <div class="grid-col2">
+              <div class="grid-cols2">
               <div class="record">
                 <label for="Name">Name:</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" placeholder="John Doe">
+                </div>
+                <div class="record">
+                  <label for="Email">Email Address:</label>
+                  <input type="email" name="Email" id="Email" placeholder="johndoe@gmail.com">
                 </div>
                 <div class="record">
                 <label for="Phone">Phone Number:</label>
-                <input type="number" name="phone" id="phone">
+                <input type="number" name="phone" id="phone" placeholder="+254 712345678">
                 </div>
                 <div class="record">
                 <label for="service">Service:</label>
@@ -134,14 +138,14 @@
                 </div>
                 <div class="record">
                   <label for="message">Additional Notes(Optional)</label>
-                  <input type="text" name="message" id="message" placeholder="Any Special requests or preferences?">
+                  <textarea type="text" name="message" id="message" placeholder="Any Special requests or preferences?"></textarea>
                 </div>
-                <div class="submit">
                   <button class="btn" type="submit">
                     <span>Submit Appointment Request</span>
-                    <i class="fa-brands fa-telegram"></i>
+                    <div class="tele">
+                      <img src="images/icons/telegram-brands-solid.png" alt="">
+                    </div>
                   </button>
-                </div>
                 <p>We'll contact you within 24 hours to confirm your appointment.</p>
                 </div>
             </form>

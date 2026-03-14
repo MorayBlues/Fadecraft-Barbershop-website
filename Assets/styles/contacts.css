@@ -52,12 +52,12 @@ p {
   text-align: center;
 }
 .grid-cols1 {
-  gap: 4px;
+  gap: 16px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 .location {
-  padding: 4px;
+  padding: 24px;
   background-color: #262626;
   border-style: solid;
   border-width: 1px;
@@ -75,31 +75,63 @@ p {
   height: 4px;
   display: flex;
 }
-img {
-  color: #fe9a00;
-  width: 4px;
-  height: 4px;
-  size: 20px;
-  display: block;
-  vertical-align: middle;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  overflow-clip-margin: content-box;
-  overflow: hidden;
+.pin img{
+  align-items: flex-start;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  filter: invert(67%) sepia(91%) saturate(2200%) hue-rotate(10deg);
+}
+.call img{
+  align-items: flex-start;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  filter: invert(67%) sepia(91%) saturate(2200%) hue-rotate(10deg);
+}
+.mail img{
+  align-items: flex-start;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  filter: invert(67%) sepia(91%) saturate(2200%) hue-rotate(10deg);
+}
+.time img{
+  align-items: flex-start;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  filter: invert(67%) sepia(91%) saturate(2200%) hue-rotate(10deg);
+}
+.tele img{
+  align-items: flex-start;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  filter: invert(67%) sepia(91%) saturate(2200%) hue-rotate(10deg);
 }
 h3 {
   color: #fff;
   margin-bottom: 4px;
   line-height: 1.5;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 .phone {
-  padding: 4px;
+  padding: 24px;
   background-color: #262626;
   border-style: solid;
   border-width: 1px;
@@ -109,6 +141,7 @@ h3 {
   display: flex;
 }
 .call {
+  padding: 24px;
   border-radius: 3px;
   justify-content: center;
   align-items: center;
@@ -117,8 +150,8 @@ h3 {
   height: 4px;
   display: flex;
 }
-.email {
-  padding: 4px;
+.Email {
+  padding: 24px;
   background-color: #262626;
   border-style: solid;
   border-width: 1px;
@@ -137,7 +170,7 @@ h3 {
   display: flex;
 }
 .hours {
-  padding: 4px;
+  padding: 24px;
   background-color: #262626;
   border-style: solid;
   border-width: 1px;
@@ -177,11 +210,9 @@ form {
   grid-column: span 2 / span 2;
 }
 .grid-cols2 {
-  grid-template-columns: repeat(2 minmax(0, 1fr));
-  gap: 4px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
   display: grid;
-}
-.record {
 }
 label {
   color: #fff;
@@ -197,7 +228,7 @@ input {
     fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-duration: 0.15s;
   color: #fff;
-  padding-block: 4px;
+  padding-block: 12px;
   padding-inline: 4px;
   background-color: #171717;
   border-style: solid;
@@ -223,6 +254,33 @@ input {
   appearance: auto;
   cursor: text;
 }
+textarea {
+  color: #fff;
+  padding-block: 12px;
+  padding-inline: 4px;
+  background-color: #171717;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  resize: none;
+  width: 100%;
+  resize: vertical;
+  font: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  letter-spacing: inherit;
+  opacity: 1px;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  cursor: text;
+  overflow-wrap: break-word;
+  column-count: initial;
+  white-space: pre-wrap;
+}
 select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property:
@@ -230,7 +288,7 @@ select {
     fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-duration: 0.15s;
   color: #fff;
-  padding-block: 4px;
+  padding-block: 12px;
   padding-inline: 4px;
   background-color: #171717;
   border-style: solid;
@@ -280,7 +338,7 @@ button {
     fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-duration: 0.15s;
   color: #000;
-  padding-block: 4px;
+  padding-block: 16px;
   background-color: #fe9a00;
   border-radius: 10px;
   gap: 4px;
@@ -297,7 +355,7 @@ button {
   color: inherit;
   opacity: 1;
 }
-.map{
+.map {
   background-color: #262626;
   border-style: solid;
   border-width: 1px;
