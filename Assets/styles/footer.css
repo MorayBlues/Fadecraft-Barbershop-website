@@ -1,0 +1,93 @@
+footer {
+  background-color: #000;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.content {
+  padding-inline: 32px;
+  padding-block: 48px;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+.grid-col {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  display: grid;
+}
+p {
+  color: #99a1af;
+  line-height: 1.5;
+}
+.icons {
+  gap: 16px;
+  display: flex;
+}
+a {
+  color: #99a1af;
+  transition-property:
+    color, background-color, border-color, outline-color, text-decoration-color,
+    fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;  
+}
+a :hover{
+    color: #fe9a00;
+}
+img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+  color: #99a1af;
+}
+h3 {
+  color: #fff;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+ul {
+  list-style: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 40px;
+}
+li {
+  display: list-item;
+}
+span .one{
+    color: #99a1af;
+    line-height: 1.4;
+}
+span .two{
+    color: #fff;
+    line-height: 1.4;
+}
+img .pic{
+    color: #fe9a00;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+    line-height: 1.4; 
+}
+span{
+    color: #99a1af;
+    line-height: 1.4;
+}
