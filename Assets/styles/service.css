@@ -8,7 +8,7 @@ body {
   font-style: normal;
 }
 main {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -138,4 +138,20 @@ span {
   grid-template-columns: repeat(2, minmax(0, 2fr));
   color: #99a1af;
   gap: calc(var(--spacing) * 6);
+}
+@media (max-width: 768px) {
+  /* Service cards alignment */
+  .service-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-info h4, .service-info .description {
+    text-align: center;
+  }
+
+  /* Gallery columns */
+  .portfolio {
+    grid-template-columns: 1fr !important;
+  }
 }

@@ -84,10 +84,12 @@ p {
   position: relative;
 }
 .img img {
+  max-width: 100%;
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  box-sizing: border-box;
   transition: transform 0.5s ease;
 }
 .img:hover img {
@@ -161,4 +163,20 @@ i {
   color: #000;
   cursor: pointer;
   text-align: center;
+}
+@media (max-width: 768px) {
+  /* Service cards alignment */
+  .service-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-info h4, .service-info .description {
+    text-align: center;
+  }
+
+  /* Gallery columns */
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
 }

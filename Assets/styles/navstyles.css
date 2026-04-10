@@ -38,7 +38,7 @@ body {
   gap: 8px;
 }
 .left-column > .logo img {
-  width: 100px;
+  width: 200px;
   height: auto;
   display: flex;
   align-items: flex-start;
@@ -84,7 +84,7 @@ body {
   align-items: flex-end;
 }
 .btn {
-  width: 125px;
+  width: 100px;
   height: 60px;
   border: none;
   border-radius: 10px;
@@ -97,5 +97,18 @@ body {
 }
 .btn:hover {
   background-color: #cea135;
-  color: #a1a1a1;
+}
+@media (max-width: 768px) {
+  .site-nav {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .right-column > .links__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
 }

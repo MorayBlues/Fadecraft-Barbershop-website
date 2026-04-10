@@ -318,3 +318,12 @@ button {
   display: flex;
   margin-top: 40px;
 }
+@media (max-width: 768px) {
+  .grid-cols3, .record:last-of-type, button {
+    grid-column: span 1 !important; /* Stack form fields */
+  }
+
+  .container {
+    padding: 60px 20px;
+  }
+}

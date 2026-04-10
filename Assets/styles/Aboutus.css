@@ -14,7 +14,7 @@ body {
   align-items: center;
 }
 .container{
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -69,5 +69,22 @@ body {
 }
 .secondary{
   background-color: #fe9a00;
-  width: 100;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  h3, article, .section {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem; /* Shrink large text for mobile */
+  }
 }
