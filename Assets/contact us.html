@@ -109,9 +109,10 @@
                 <input
                   type="text"
                   name="name"
-                  id="name"
+                  id="Name"
                   placeholder="John Doe"
                 />
+                <span id="name-error" class="error"></span>
               </div>
               <div class="record">
                 <label for="Email">Email Address:</label>
@@ -121,15 +122,17 @@
                   id="Email"
                   placeholder="johndoe@gmail.com"
                 />
+                <span id="email-error" class="error"></span>
               </div>
               <div class="record">
                 <label for="Phone">Phone Number:</label>
                 <input
-                  type="number"
+                  type="tel"
                   name="phone"
-                  id="phone"
+                  id="Phone"
                   placeholder="+254 712345678"
                 />
+                <span id="number-error" class="error"></span>
               </div>
               <div class="record">
                 <label for="service">Service:</label>
@@ -144,10 +147,12 @@
                   <option value="executive">The Executive-$65</option>
                   <option value="royal">The Royal Treatment-$85</option>
                 </select>
+                <span id="service-error" class="error"></span>
               </div>
               <div class="record">
                 <label for="date">Prefered Date:</label>
                 <input type="date" name="date" id="date" />
+                <span id="date-error" class="error"></span>
               </div>
               <div class="record">
                 <label for="Time">Convinient Time:</label>
@@ -165,6 +170,7 @@
                   <option value="1800">18:00 PM</option>
                   <option value="1900">19:00 PM</option>
                 </select>
+                <span id="time-error" class="error"></span>
               </div>
               <div class="grid-cols3">
                 <div class="record">
@@ -189,6 +195,7 @@
                 <p>
                   We'll contact you within 24 hours to confirm your appointment.
                 </p>
+                <div id="success-message" class="success"></div>
               </div>
             </div>
           </form>
@@ -275,5 +282,6 @@
     </div>
   </div>
 </footer>
+<script src="javaScript/contacts.js"></script>
   </body>
 </html>
