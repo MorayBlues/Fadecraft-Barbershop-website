@@ -45,6 +45,13 @@ body {
   flex: 1;
   border-radius: 20px;
   overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.image-wrapper.visible{
+  opacity: 1;
+  transform: translateY(0);
 }
 .image-wrapper img{
   width: 100%;

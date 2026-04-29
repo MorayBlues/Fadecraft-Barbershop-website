@@ -6,6 +6,7 @@
   --full-height-with-banner: calc(100dvh - var(--banner-height));
 }
 body {
+  width: 100%;
   margin: 0;
   padding-top: calc(var(--site-nav-height)+var(--nav-gap));
   height: 100%;
@@ -84,7 +85,7 @@ body {
   align-items: flex-end;
 }
 .btn {
-  width: 100px;
+  width: 100%;
   height: 60px;
   border: none;
   border-radius: 10px;
