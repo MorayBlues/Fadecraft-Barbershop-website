@@ -147,6 +147,12 @@ span {
 }
 @media (max-width: 768px) {
   /* Service cards alignment */
+  .service-grid{
+    grid-template-columns: 1fr;
+  }
+  .grid-col-2{
+    grid-template-columns: 1fr;
+  }
   .service-item {
     flex-direction: column;
     text-align: center;

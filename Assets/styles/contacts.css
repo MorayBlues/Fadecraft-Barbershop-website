@@ -331,9 +331,28 @@ button {
   margin-top: 40px;
 }
 @media (max-width: 768px) {
+  html, body{
+    overflow-x: hidden;
+  }
+  *{
+    box-sizing: border-box;
+  }
   .container {
     padding: 60px 20px !important; /* Reduces side padding on mobile */
     width: 100%;
     box-sizing: border-box;
+  }
+  .grid-cols1{
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .grid-cols2{
+    grid-template-columns: 1fr;
+  }
+  .record:last-of-type{
+    grid-column: span 1;
+  }
+  .grid-cols3{
+    grid-column: span 1;
   }
 }

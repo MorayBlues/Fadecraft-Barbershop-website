@@ -178,6 +178,12 @@ i {
   text-align: center;
 }
 @media (max-width: 768px) {
+  html, body{
+    overflow-x: hidden;
+  }
+  *{
+    box-sizing: border-box;
+  }
   /* Service cards alignment */
   .service-item {
     flex-direction: column;
