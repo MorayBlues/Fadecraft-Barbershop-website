@@ -85,8 +85,10 @@ body {
   align-items: flex-end;
 }
 .btn {
-  width: 100%;
-  height: 60px;
+  display: flex;
+  white-space: nowrap;
+  width: 90px;
+  height: 30px;
   border: none;
   border-radius: 10px;
   font-family: "Ubuntu Condensed", sans-serif;
@@ -99,7 +101,26 @@ body {
 .btn:hover {
   background-color: #cea135;
 }
+.hamburger{
+  display: none;
+}
+.hamburger span{
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  display: block;
+}
 @media (max-width: 768px) {
+  .hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
   .site-nav {
     height: auto;
     padding: 20px;
@@ -111,5 +132,12 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+  }
+  .links__wrapper{
+    display: none;
+  }
+  .links__wrapper.open{
+    display: flex;
+    flex-direction: column;
   }
 }

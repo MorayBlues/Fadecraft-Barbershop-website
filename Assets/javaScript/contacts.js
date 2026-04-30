@@ -1,4 +1,4 @@
-const form=document.querySelector('form');
+const form=document.querySelector('#contactForm');
 form.addEventListener('submit', function(event){
     event.preventDefault();
     const nameError=document.querySelector('#name-error');
@@ -78,5 +78,5 @@ bookings.push(bookingData);
 localStorage.setItem('bookings', JSON.stringify(bookings));
 document.querySelector('#success-message').textContent="Thank you for reaching out to us!";
 document.querySelector('#success-message').style.visibility="visible";
-document.getElementById('form').reset();
+document.getElementById('contactForm').reset();
 });
