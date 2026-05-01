@@ -1,3 +1,6 @@
+const dateInput=document.querySelector('#date');
+const today=new Date();
+dateInput.min=today.toISOString().split('T')[0];
 const form=document.querySelector('#contactForm');
 form.addEventListener('submit', function(event){
     event.preventDefault();
@@ -42,14 +45,14 @@ form.addEventListener('submit', function(event){
         console.log(serviceInput.value);
     }
     const dateError=document.querySelector('#date-error');
-    const dateInput=document.querySelector('#date');
     if(dateInput.value===""){
         console.log("Which date is best for you?");
         dateError.textContent="Which date is best for you?";
         return;
     }
-    else{
-        console.log(dateInput.value);
+    else if(dateInput.value < today.toISOString().split('T')[0]){
+        dateError.textContent="Please select a future date.";
+        return;
     }
     const timeError=document.querySelector('#time-error');
     const timeInput=document.querySelector('#time');
