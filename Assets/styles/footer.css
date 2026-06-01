@@ -1,15 +1,23 @@
 footer {
   background-color: #000;
   padding: 60px 0 30px 0;
-  border-top: 1px solid #262626;
+  border-top: 1px solid #1a1a1a;
   width: 100%;
   color: #99a1af;
+}
+
+footer p {
+  color: #99a1af;
+  font-size: 14px;
+  text-align: left; /* Forces left alignment in footer */
+  margin: 0 0 8px 0;
+  line-height: 1.6;
 }
 
 .footer-wrapper {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .grid-col {
@@ -24,47 +32,56 @@ footer {
 .footer-brand {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
 }
 
-
-footer p {
+.footer-slogan{
   color: #99a1af;
   font-size: 14px;
-  text-align: left; /* Forces left alignment in footer */
-  margin: 0 0 8px 0;
   line-height: 1.6;
+  margin: 0;
+}
+
+.mpesa-note{
+  color: #fe9a00;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
 }
 
 .logo img {
   height: 40px;
   width: auto;
-  box-sizing: border-box;
 }
 
 .icons {
   display: flex;
   gap: 16px;
-  margin-top: 10px;
-  width: auto;
-  height: auto;
+  margin-top: 4px;
 }
 
-.icons img {
+.icons a img {
   width: 20px; 
   height: 20px;
   filter: invert(67%) sepia(91%) saturate(2200%) hue-rotate(10deg);
+  transition: filter 0.3s ease;
+}
+
+.icons a:hover img{
+  filter: invert(1);
 }
 
 footer h3 {
   all: unset;
   display: block;
-  width: auto;
   color: #fff;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   margin-bottom: 25px;
-  font-family: 'Inter', sans-serif;
 }
 
 footer ul {
@@ -76,14 +93,8 @@ footer ul {
 footer li {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
-  font-size: 0.95rem;
-}
-footer-slogan{
-  color: #99a1af;
-  font-size: 14px;
-  line-height: 1.6;
-  margin: 0;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
 }
 
 footer a {
@@ -116,29 +127,30 @@ span.two {
 }
 
 .contact .pic {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   margin-top: 3px;
   filter: invert(67%) sepia(91%) saturate(2200%) hue-rotate(10deg);
+  flex-shrink: 0;
 }
 
 .contact span {
   text-align: left;
-  line-height: 1.4;
-  color: #fff;
+  line-height: 1.5;
+  color: #99a1af;
 }
 
 .border {
   margin-top: 50px;
   padding-top: 25px;
-  border-top: 1px solid #262626;
+  border-top: 1px solid #1a1a1a;
   text-align: center;
 }
 
 .border p {
   text-align: center;
-  font-size: 0.85rem;
-  color: #99a1af;
+  font-size: 0.82rem;
+  color: #555;
 }
 @media (max-width: 992px) {
   .grid-col {
@@ -148,18 +160,31 @@ span.two {
 }
 
 @media (max-width: 600px) {
+  .footer-wrapper{
+    padding: 0 20px;
+  }
   .grid-col {
     grid-template-columns: 1fr; /* 1 column for phones */
     text-align: center;
   }
+  footer p,
+  .footer-slogan,
+  .mpesa-note{
+    text-align: center;
+    }
 
-  .footer-brand, .hours li, .contact li {
+  .footer-brand, 
+  .hours li, 
+  .contact li {
     justify-content: center;
     align-items: center;
   }
 
   .hours li {
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
+  }
+  .icons{
+    justify-content: center;
   }
 }

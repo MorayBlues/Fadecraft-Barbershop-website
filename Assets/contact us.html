@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <title>Book Appointment -FadeCraft Barbershop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,6 +28,7 @@
           </p>
         </div>
         <div class="grid-cols1">
+          <!-- Sidebar -->
           <div class="contact-sidebar">
             <div class="location">
               <div class="icon">
@@ -82,16 +83,21 @@
                 </div>
               </div>
             </div>
+          
+            <div class="mpesa-card">
+              <p class="mpesa-text">💳 M-pesa . Cash . Cards accepted </p>
+            </div>
           </div>
+          <!-- Form -->
           <form id="contactForm" action="">
             <div class="grid-cols2">
               <div class="record">
-                <label for="Name">Name:</label>
+                <label for="Name">Full Name:</label>
                 <input
                   type="text"
                   name="name"
                   id="Name"
-                  placeholder="John Doe"
+                  placeholder="e.g. Brian Kamau"
                 />
                 <span id="name-error" class="error"></span>
               </div>
@@ -101,7 +107,7 @@
                   type="email"
                   name="Email"
                   id="Email"
-                  placeholder="johndoe@gmail.com"
+                  placeholder="Kamau@gmail.com"
                 />
                 <span id="email-error" class="error"></span>
               </div>
@@ -119,19 +125,28 @@
                 <label for="service">Service:</label>
                 <select name="service" id="service">
                   <option value="">Select a service</option>
-                  <option value="Classic-Cut">Classic cut-$35</option>
-                  <option value="Premium-Cut">Premium cut & Style-$50</option>
-                  <option value="Fade">Fade/taper-$40</option>
-                  <option value="Beard-Trim">Beard trim-$25</option>
-                  <option value="hot-shave">Hot Towel Shave-$40</option>
-                  <option value="beard-design">Beard Design-$35</option>
-                  <option value="executive">The Executive-$65</option>
-                  <option value="royal">The Royal Treatment-$85</option>
+                  <optgroup label="Haircuts">
+                  <option value="Classic-Cut">Classic cut - KES 250</option>
+                  <option value="Premium-Cut">Premium cut & Style - KES 350</option>
+                  <option value="Fade">Fade/taper - KES 280</option>
+                  <option value="Kids">Kids Cut (Under 12) - KES 200</option>
+                  </optgroup>
+                  <optgroup label="Beard Services">
+                  <option value="Beard-Trim">Beard trim - KES  100</option>
+                  <option value="hot-shave">Hot Towel Shave - KES 150</option>
+                  <option value="beard-design">Beard Design - KES 200</option>
+                  <option value="executive">The Executive - KES 500</option>
+                  </optgroup>
+                  <optgroup label="Packages">
+                  <option value="executive">The Executive - KES 500</option> 
+                  <option value="royal">The Royal Treatment - KES 750</option>
+                  <option value="Grooming">The Grooming Club - KES 2000/month</option>
+                  </optgroup>
                 </select>
                 <span id="service-error" class="error"></span>
               </div>
               <div class="record">
-                <label for="date">Prefered Date:</label>
+                <label for="date">Preferred Date:</label>
                 <input type="date" name="date" id="date" />
                 <span id="date-error" class="error"></span>
               </div>
@@ -159,6 +174,7 @@
                   <textarea
                     name="message"
                     id="message"
+                    rows="4"
                     placeholder="Any Special requests or preferences?"
                   ></textarea>
                 </div>
@@ -173,8 +189,9 @@
                     </div>
                   </button>
                 </div>
-                <p>
+                <p class="confirm-note">
                   We'll contact you within 24 hours to confirm your appointment.
+                  You can also whatsApp us directly on +254 756 985 332
                 </p>
                 <div id="success-message" class="success"></div>
               </div>

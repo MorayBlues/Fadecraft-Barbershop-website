@@ -1,8 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - FadeCraft</title>
+  <link rel="stylesheet" href="styles/admin.css">
+</head>
 <body>
-<link rel="stylesheet" href="styles/admin.css">
 <div class="password-gate">
   <h1>Admin Login</h1>
-
   <p class="gate-description">
     This content is protected. Please enter the password to continue.
   </p>
@@ -11,11 +17,13 @@
     id="admin-password"
     placeholder="Enter admin password"
   />
+  <span id="password-error" class="error"></span>
   <button onclick="checkPassword()">Login</button>
 </div>
 <div id="Available-bookings" style="display: none;">
-  <h1>Services Booked</h1>
+  <h1>Bookings</h1>
   <table>
+    <thead>
     <tr>
       <th>name</th>
       <th>email</th>
@@ -24,10 +32,10 @@
       <th>date</th>
       <th>time</th>
     </tr>
-    <tr>
-
-    </tr>
+    </thead>
+   <tbody></tbody>
   </table>
 </div>
 <script src="javaScript/admin.js"></script>
 </body>
+</html>

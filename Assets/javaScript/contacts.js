@@ -9,7 +9,6 @@ form.addEventListener('submit', function(event){
     if(nameInput.value===""){
         console.log("Name can't be empty.");
         nameError.textContent="Name can't be empty.";
-        return;
     }
     else{
         console.log(nameInput.value);
@@ -19,7 +18,6 @@ form.addEventListener('submit', function(event){
     if(emailInput.value===""){
         console.log("This field can't be empty.");
         emailError.textContent="Email can't be empty.";
-        return;
     }
     else{
         console.log(emailInput.value);
@@ -29,7 +27,6 @@ form.addEventListener('submit', function(event){
     if(phoneInput.value===""){
         console.log("Please fill out this field.");
         phoneError.textContent="Phone can't be empty.";
-        return;
     }
     else{
         console.log(phoneInput.value);
@@ -39,7 +36,6 @@ form.addEventListener('submit', function(event){
     if(serviceInput.value===""){
         console.log("please select a service.");
         serviceError.textContent="Please select a service.";
-        return;
     }
     else{
         console.log(serviceInput.value);
@@ -48,11 +44,9 @@ form.addEventListener('submit', function(event){
     if(dateInput.value===""){
         console.log("Which date is best for you?");
         dateError.textContent="Which date is best for you?";
-        return;
     }
     else if(dateInput.value < today.toISOString().split('T')[0]){
         dateError.textContent="Please select a future date.";
-        return;
     }
     const timeError=document.querySelector('#time-error');
     const timeInput=document.querySelector('#time');
