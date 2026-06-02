@@ -2,8 +2,9 @@ body {
   background-color: #000;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Inter',sans-serif;
+  font-family: "Inter",sans-serif;
   max-width: 100%;
+  margin: 0;
 }
 section {
   display: grid;
@@ -14,32 +15,55 @@ section {
   box-sizing: border-box;
 }
 .hero-section {
-  background-image: url("../images/background/photo-1686671805337-7d8aa64b965f.avif");
+  background-image: url(/Assets/images/background/photo-1686671805337-7d8aa64b965f.avif);
+  background-size: cover;
+  background-position: center;
   min-height: calc(100vh - var(--site-nav-height));
   color: #fff;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
+h1.typing{
+  font-family: "Oswald", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  min-height: 3.5rem;
+}
 h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   padding: 1px 20px;
   width: 100%;
   border-radius: 2px;
+  color: #fff;
+  margin-bottom: 8px;
 }
 article {
   max-width: 100%;
   width: 100%;
-  padding: 1rem;
-  border-radius: 8px;
-  border: 1px solid #a1a1a1;
-  background: rgba(255, 255, 255, 0.02);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(254, 154, 0, 0.3);
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
 }
 article h3 {
-  padding: 1px 20px;
-  width: auto;
-  border-radius: 2px;
+  padding: 0;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 6px;
+}
+article-sub{
+  color: #99a1af;
+  font-size: 0.85rem;
+  margin: 0 0 16px 0;
+  text-align: left;
 }
 .booking__form {
   display: flex;
@@ -48,53 +72,69 @@ article h3 {
   gap: 0.75rem;
 }
 input {
-  padding: 10px;
-  border: 1px solid #a1a1a1;
-  background-color: beige;
-  color: #090909;
+  padding: 10px 14px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  width: 100%;
+  box-sizing: border-box;
 }
-input[type="button"] {
-  height: 40px;
-  padding: 0 1rem;
-  align-self: center;
-  border: none;
-  border-radius: 30px;
-  background-color: oklch(76.9% 0.188 70.08);
-  width: 125px;
+input{
+  color: #777;
+}
+.book-btn{
+  display: block;
+  text-align: center;
+  padding: 12px 20px;
+  background-color: #fe9a00;
+  color: #000;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-top: 4px;
+  transition: background-color 0.3s ease;
+}
+.book-btn:hover{
+  background-color: #d4820a;
 }
 .description {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700px;
+  font-weight: 400;
   font-style: normal;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 1rem;
 }
 .text-amber-500 {
-  color: oklch(76.9% 0.188 70.08);
+  color: #fe9a00;
+  font-weight: 700;
 }
 .motto {
   display: flex;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500px;
-  font-style: normal;
-  align-self: self-end;
+  font-family: "Oswald", sans-serif;
+  align-self: flex-end;
+  margin-bottom: 10px;
 }
 @media (max-width: 1024px) {
-  /* Fixes the 390px width issue on Index */
-  h3, article, section {
-    width: 100%;
-    max-width: 100%;
+  section{
     grid-template-columns: 1fr;
   }
-
-  /* Fixes About Us 2-column layout */
-  .container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    padding: 0 20px;
+  h1.typing{
+    font-size: 2rem;
   }
-  
-  .about-text h2 {
-    font-size: 2.5rem; /* Shrink large text for mobile */
+}
+@media(max-width: 768px){
+  section{
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .hero-section{
+    align-items: flex-end;
+    padding-bottom: 2rem;
   }
 }

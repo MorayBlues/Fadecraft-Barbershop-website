@@ -1,7 +1,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   background-color: #000;
 }
@@ -23,16 +23,19 @@ body {
   align-items: center;
 }
 .about-text h2{
+  font-family: "Oswald", sans-serif;
   font-size: 3.5rem;
+  font-weight: 700;
   line-height: 1.1;
   margin-bottom: 30px;
   color: #fff;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .about-text p {
   color: #99a1af;
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 25px;
   text-align: left;
 }
@@ -47,7 +50,7 @@ body {
   overflow: hidden;
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 .image-wrapper.visible{
   opacity: 1;
@@ -60,23 +63,62 @@ body {
   display: block;
 }
 .offset-up{
-  transform: translate(-40px);
+  margin-top: -60px;
 }
 .offset-down{
-  transform: translate(40px);
+  margin-top: -60px;
 }
 .button {
-  background-color: #000;
+  display: inline-block;
+  margin-top: 10px;
   color: #fff;
   padding: 15px 30px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 5px;
-  display: inline-block;
 }
 .secondary{
+  background-color: #111;
+  border-top: 1px solid #222;
+  padding: 80px 40px;
+  text-align: center;
+}
+.secondary h2,
+.seco{
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.secondary p{
+  color: #99a1af;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+.mpesa-inline{
+  display: block;
+  color: #fe9a00;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+.button-wrap{
+  margin-top: 20px;
+}
+.cta-btn{
+  display: inline-block;
   background-color: #fe9a00;
-  width: 100%;
+  color: #000;
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+.cta-btn:hover{
+  background-color: #d4820a;
 }
 @media (max-width: 1024px) {
   h3, article, .section {
@@ -93,5 +135,15 @@ body {
   
   .about-text h2 {
     font-size: 2.5rem; /* Shrink large text for mobile */
+  }
+  .offset-up,
+  .offset-down{
+    margin-top: 0;
+  }
+  .about-images{
+    flex-direction: colomn;
+  }
+  .image-wrapper img{
+    height: 300px;
   }
 }
