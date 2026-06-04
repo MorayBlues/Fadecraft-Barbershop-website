@@ -6,8 +6,8 @@ const observer = new IntersectionObserver((entries)=>{
         }
     });
 });
-category.forEach((category)=>{
-    const serviceCards = category.querySelectorAll('.service-card');
+category.forEach((cat)=>{
+    const serviceCards = cat.querySelectorAll('.service-card');
     serviceCards.forEach((card, index)=>{
         card.style.transitionDelay = index*100 + "ms";
         observer.observe(card);
