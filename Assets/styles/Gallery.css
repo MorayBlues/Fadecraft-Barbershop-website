@@ -172,6 +172,12 @@ p {
   *{
     box-sizing: border-box;
   }
+  .container {
+    padding-block: 24px;
+  }
+  .padding {
+    padding-inline: 16px;
+  }
  .img-wrapper{
   grid-template-columns: 1fr;
  }

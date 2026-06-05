@@ -183,6 +183,12 @@ span {
   line-height: 1.6;
 }
 @media (max-width: 768px) {
+  main {
+    padding: 24px 16px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
   /* Service cards alignment */
   .service-grid {
     grid-template-columns: 1fr;

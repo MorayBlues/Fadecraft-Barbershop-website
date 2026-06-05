@@ -10,39 +10,57 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/navstyles.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/navstyles.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-     <div id="nav-placeholder"></div>
-    
+    <div class="page-wrapper">
+    <div id="nav-placeholder"></div>
+
     <div class="hero-section">
       <section>
         <div class="hero-left">
-        <div class="motto">
-          <h1 class="typing"></h1>
+          <div class="premium-grooming">
+            <span>PREMIUM GROOMING</span>
+          </div>
+          <div class="motto">
+            <h1 class="typing"></h1>
+          </div>
+          <h2 class="description">
+            Where Nairobi's finest get their cuts.<br />
+            Classic technique. Contemporary style is
+            <span class="text-amber-500">FadeCraft's</span> Cut's difference.
+          </h2>
+          <div class="btn-group">
+            <a class="book-btn" href="contact us.html">Book Appointment ></a>
+            <a class="clear-btn" href="service.html">View Services</a>
+          </div>
         </div>
-        <article>
-          <h3>Quick Booking</h3>
-          <p class="article-sub">Fill in your details and we'll reach out to confirm your slot.</p>
-          <form class="booking__form" id="quickform">
-          <input type="text" name="name" id="name" placeholder="Your name" />
-          <input type="email" name="email" id="Email" placeholder="Email" />
-          <input type="tel" name="phone" id="Phone" placeholder="+254 7xx xxx xxx" />
-          <input type="datetime-local" name="Date" id="Date" />
-          <a href="contact us.html" class="book-btn">Book Full Appointment →</a>
-          </form>
-        </article>
-        <h2 class="description">
-          Where Nairobi's finest get their cuts.<br/>
-          Classic technique. Contemporary style <span class="text-amber-500">FadeCraft's</span> Cuts difference.
-        </h2> 
-        </div>
-     </section>
+      </section>  
     </div>
-   <div id="footer-placeholder"></div>
-   <script src="javaScript/fetch.js"></script>
-   <script src="javaScript/index.js"></script>
+     <section class="intro-cards">
+        <div class="grid-cols1">
+          <div class="cards">
+            <img src="images/icons/award-solid.png" alt="">
+            <h3>Expert Barbers</h3>
+            <p>10+ Years Experience</p>
+          </div>
+          <div class="cards">
+            <img src="images/icons/people-group-solid.png" alt="">
+            <h3>5000+ Clients</h3>
+            <p>Trusted by Thousands</p>
+          </div>
+          <div class="cards">
+            <img src="images/icons/clock-solid.png" alt="">
+            <h3>Walk-ins Welcome</h3>
+            <p>Or book an appointment</p>
+          </div>
+        </div>
+      </section>
+    <div id="footer-placeholder"></div>
+    <script src="javaScript/fetch.js"></script>
+    <script src="javaScript/index.js"></script>
+    </div>
   </body>
 </html>

@@ -223,7 +223,7 @@ textarea {
   grid-column: span 2;
   gap: 12px;
 }
-button {
+form button {
   grid-column: span 2;
   margin-top: 10px;
   color: #000;
@@ -240,7 +240,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-button:hover{
+form button:hover{
   background-color: #d4820a;
 }
 .confirm-note{
@@ -266,7 +266,11 @@ button:hover{
     box-sizing: border-box;
   }
   .container {
-    padding: 60px 20px; /* Reduces side padding on mobile */
+    padding: 60px 20px; 
+    padding-top: 40px;
+  }
+  h1{
+    font-size: 1.8rem;
   }
   .grid-cols1{
     grid-template-columns: 1fr;
@@ -281,7 +285,7 @@ button:hover{
   .grid-cols3{
     grid-column: span 1;
   }
-  button{
+  form button{
     grid-column: span 1;
   }
 }

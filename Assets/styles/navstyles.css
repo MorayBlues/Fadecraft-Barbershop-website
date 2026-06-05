@@ -8,16 +8,18 @@ body {
   padding: 0;
   height: 100%;
 }
-.site-nav {
+#nav-placeholder{
   position: sticky;
   top: 0;
+  z-index: 1000;
+  height: var(--site-nav-height);
+  background-color: #090909;
+}
+.site-nav {
   margin: 0;
   padding: 0 30px;
-  left: 0;
-  right: 0;
   width: 100%;
   height: var(--site-nav-height);
-  z-index: 1000;
   border-bottom: 1px solid #a1a1a1;
   background-color: #090909;
   display: flex;
@@ -98,10 +100,10 @@ body {
   background-color: #d4820a;
 }
 .hamburger{
+  background-color: none !important;
   display: none;
   flex-direction: column;
   gap: 5px;
-  background: none;
   border: none;
   cursor: pointer;
   padding: 5px;
@@ -117,6 +119,10 @@ body {
 @media (max-width: 768px) {
   .hamburger{
     display: flex;
+  }
+  #nav-placeholder{
+    position: relative;
+    height: auto;
   }
   .site-nav {
     height: auto;
