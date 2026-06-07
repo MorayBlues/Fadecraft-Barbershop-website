@@ -1,5 +1,5 @@
 const SUPABASE_URL = "https://amuwdajowkyxrogdcyqy.supabase.co";
-const SUPERBASE_KEY ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFtdXdkYWpvd2t5eHJvZ2RjeXF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA2NDAzOTcsImV4cCI6MjA5NjIxNjM5N30.bGicPRZZpHSCpdOLJNwor-hRGVTNXhCHDU4Aivi0qlM";
+const SUPABASE_KEY ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFtdXdkYWpvd2t5eHJvZ2RjeXF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA2NDAzOTcsImV4cCI6MjA5NjIxNjM5N30.bGicPRZZpHSCpdOLJNwor-hRGVTNXhCHDU4Aivi0qlM";
 async function checkPassword() {
   const input = document.querySelector("#admin-password").value;
   const errorEl = document.querySelector("#password-error");
@@ -9,7 +9,7 @@ async function checkPassword() {
   }
   errorEl.textContent = "";
   document.querySelector(".password-gate").style.display = "none";
-  document.querySelector("#Available-Bookings").style.display = "block";
+  document.querySelector("#available-bookings").style.display = "block";
 
   const tbody = document.querySelector("tbody");
   tbody.innerHTML ="<tr><td colspan='6' style='text-align:center;color:#99a1af'>Loading...</td></tr>";
@@ -19,8 +19,8 @@ async function checkPassword() {
       `${SUPABASE_URL}/rest/v1/bookings?select=*&order=created_at.desc`,
       {
         headers: {
-          apikey: SUPERBASE_KEY,
-          Authorization: `Bearer${SUPERBASE_KEY}`,
+          apikey: SUPABASE_KEY,
+          Authorization: `Bearer ${SUPABASE_KEY}`,
         },
       },
     );
