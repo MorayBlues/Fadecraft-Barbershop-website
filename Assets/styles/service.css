@@ -202,10 +202,15 @@ span {
   }
 
   .service-info h4,
-  .service-info .description {
-    text-align: center;
+  .service-info .description,
+  .duration {
+    text-align: left;
   }
   .background{
     padding: 30px 20px;
+  }
+  .price {
+    white-space: normal;
+    font-size: 1.1rem;
   }
 }
