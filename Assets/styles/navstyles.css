@@ -121,7 +121,8 @@ body {
     display: flex;
   }
   #nav-placeholder{
-    position: relative;
+    position: sticky;
+    top: 0;
     height: auto;
   }
   .site-nav {

@@ -157,7 +157,6 @@ h3 {
 .motto {
   display: flex;
   font-family: "Oswald", sans-serif;
-  align-self: flex-end;
   margin-bottom: 10px;
 }
 @media (max-width: 1024px) {
