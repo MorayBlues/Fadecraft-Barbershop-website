@@ -22,7 +22,7 @@ section {
   gap: 1rem;
 }
 .hero-section {
-  background-image: url(/images/background/photo-1686671805337-7d8aa64b965f.avif);
+  background-image: url(../images/background/photo-1686671805337-7d8aa64b965f.avif);
   background-size: cover;
   background-position: center;
   min-height: calc(100vh - var(--site-nav-height));
@@ -183,5 +183,95 @@ h3 {
   }
   .intro-cards {
     padding: 24px 16px;
+  }
+}
+/* Testimonials section */
+.testimonials {
+  background-color: #000;
+  padding: 80px 20px;
+}
+.testimonials-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+}
+.testimonials-header .touch {
+  display: inline-block;
+  padding: 4px 14px;
+  border: 1px solid #fe9a00;
+  border-radius: calc(infinity * 1px);
+  color: #fe9a00;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 16px;
+}
+.testimonials-header h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+}
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.testimonial-card {
+  background-color: #171717;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 28px;
+  transition: border-color 0.3s ease;
+}
+.testimonial-card:hover {
+  border-color: #fe9a00;
+}
+.stars {
+  color: #fe9a00;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+.testimonial-card .quote {
+  color: #cbced4;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.testimonial-card .client {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-top: 1px solid #2a2a2a;
+  padding-top: 14px;
+}
+.client-name {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.client-tag {
+  color: #fe9a00;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 50px 16px;
+  }
+  .testimonials-header h2 {
+    font-size: 1.5rem;
   }
 }
